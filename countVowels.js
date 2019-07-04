@@ -1,3 +1,4 @@
+//Count the number of vowels in a string
 const vowels = (str)  => {
   let count = 0;
   const checker = ['a', 'e', 'i', 'o', 'u'];

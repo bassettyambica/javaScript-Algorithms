@@ -1,3 +1,5 @@
+//Check if a given string has unique characters in it
+
 function uniqueString(str){
 	var hashtable = {};
 	for(var i=0; i<str.length; i++){
@@ -7,10 +9,10 @@ function uniqueString(str){
 		}
 		else{
 			hashtable[str[i]] = 0;
-			
+
 		}
 	}
   return true;
-	
+
 }
 console.log(uniqueString("kim"));

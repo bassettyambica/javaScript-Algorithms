@@ -2,7 +2,7 @@ function uniqueElements(arr){
 	var results =[];
   for(var i=0;i<arr.length;i++){
   	if(results.indexOf(arr[i]) == -1)
-    	results.push(arr[i]);   
+    	results.push(arr[i]);
   }
   console.log(results);
 }
@@ -29,4 +29,3 @@ Using Sets ES6
 var a = ['a','a','b','c','c',1,2,3,3,2,4,1,4];
 var mySet = new Set(a);
 console.log(mySet);
-
