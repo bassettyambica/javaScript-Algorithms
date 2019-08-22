@@ -45,3 +45,6 @@ a.length = 0;
 console.log(a, b); [], []
 
 ===========
+
+//Create an A?rray with lelements 1...n
+[...Array(n).keys()]

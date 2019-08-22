@@ -2,7 +2,7 @@
 let arr = {
 a:1,
 b:2
-}
+} //o/p [1,2]
 
 const convertToArray = arr => {
  let result = [];
@@ -29,7 +29,7 @@ let arr = {
   b: 2,
   getA() {
     console.log("a");
-    return this
+    return this //add this if you are calling a method again
   },
   getB() {
     console.log("b")

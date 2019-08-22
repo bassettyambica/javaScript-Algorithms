@@ -4,6 +4,9 @@ const minMaxArray = arr => {
   let min = Math.min.apply(null, arr);
   let max = Math.max.apply(null, arr);
 
+	// /let min = Math.min(...arr);
+  //let max = Math.max(...arr);
+
   console.log(total - min , total - max);
 }
 

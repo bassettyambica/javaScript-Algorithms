@@ -61,6 +61,23 @@ Array.prototype.myReduce = function(fn, intitialValue){
 let arr = 'hello';
 console.log(arr.split('').myReduce((acc, el) => el + acc, ''))
 
+==========
+//Sol2 :
+Array.prototype.myReduce = function (callback, initValue) {
+  for(var i=0; i<this.length; i++){
+      if(initValue !== undefined){
+          initValue = callback(initValue, this[i], i, this)
+      }
+      else {
+        initValue = this[i]
+      }
+  }
+
+  return initValue;
+}
+
+console.log([1,2,3,4].myReduce((cal, val) => cal + val));
+console.log([1,2,3,4].myReduce((cal, val) => cal + val, 3));
 ===============
 //Native bind method on functions - video polyfill for bind method(akshai sainai video)
 
